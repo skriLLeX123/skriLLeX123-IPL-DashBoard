@@ -6,6 +6,8 @@
     }
     .team-grid{
         display: grid;
+        padding: 20px;
+        border-style: dashed;
         grid-template-columns: 1fr 1fr;
         grid-column-gap:10px;
         grid-row-gap:30px;
