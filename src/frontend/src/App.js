@@ -2,7 +2,7 @@ import './App.scss';
 import {TeamPage} from './pages/TeamPage.js';
 import {MatchPage} from './pages/MatchPage.js';
 import { HomePage } from './pages/HomePage';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <div className="App">

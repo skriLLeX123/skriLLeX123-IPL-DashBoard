@@ -8,13 +8,12 @@ import {Link} from 'react-router-dom';
 export const TeamPage = () => {
 
     const [team, setTeam] = useState({matches:[]});
-
     const {teamName} = useParams();
 
     useEffect(
         ()=>{
             const fetchTeam = async()=>{
-                const response = await fetch(`http://localhost:8080/team/${teamName}`);
+                const response = await fetch(`${process.env.REACT_APP_API_ROOT_URL}/team/${teamName}`);
                 const data = await response.json();
                 setTeam(data);
             };
